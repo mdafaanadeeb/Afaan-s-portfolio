@@ -80,7 +80,7 @@
       color: #ccc;
     }
 
-    .skills, .certifications, .projects, .contact {
+    .skills, .certifications, .projects, .contact,.Experience {
       background: var(--section-bg);
       border-radius: 20px;
       margin: 20px auto;
@@ -116,6 +116,49 @@
     }
 
     .projects .card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 15px var(--accent-color);
+    }
+
+
+
+    
+    .projects .card {
+      background: #2a2a2a;
+      border-radius: 10px;
+      padding: 20px;
+      margin: 15px;
+      color: #eee;
+      transition: var(--transition);
+    }
+
+    
+    .projects .card {
+      background: #2a2a2a;
+      border-radius: 10px;
+      padding: 20px;
+      margin: 15px;
+      color: #eee;
+      transition: var(--transition);
+    }
+
+    
+    .Experience .card {
+      background: #2a2a2a;
+      border-radius: 10px;
+      padding: 20px;
+      margin: 15px;
+      color: #eee;
+      transition: var(--transition);
+    }
+
+    .Experience .card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 15px var(--accent-color);
+    } .card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 15px var(--accent-color);
+    } .card:hover {
       transform: scale(1.05);
       box-shadow: 0 0 15px var(--accent-color);
     }
