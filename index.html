@@ -1,109 +1,223 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Afaan's Portfolio</title>
- <link rel="stylesheet" href="style.css">
-  
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Md Afaan Adeeb | AI/ML Engineer</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header>
-    <h1>Afaan.</h1>
-    <nav>
-      <a href="#about">About</a>
-      <a href="#skills">Skills</a>
-      <a href="#projects">Projects</a>
-      <a href="#certifications">Certifications</a>
-      <a href="#Experience">Experience</a>
-      <a href="#contact">Contact</a>
+
+    <canvas id="particles"></canvas>
+
+    <nav class="navbar">
+        <div class="logo">Afaan<span>Adeeb</span></div>
+        <ul class="menu">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="menu-btn">
+            <i class="fas fa-bars"></i>
+        </div>
     </nav>
-  </header>
 
+    <section class="home" id="home">
+        <div class="home-content">
+            <div class="text-1">Hello, my name is</div>
+            <div class="text-2">Md Afaan Adeeb</div>
+            <div class="text-3">And I'm a <span class="typing"></span></div>
+            <p>A results-oriented Computer Science undergraduate (2026) with strong expertise in Java, Python, and Generative AI. Proven track record of developing scalable web applications and optimizing algorithms.</p>
+            <a href="#contact" class="btn">Hire Me</a>
+        </div>
+    </section>
 
-  <section class="intro" id="about">
-    <h2>Hello, I'm Afaan</h2>
-    <p>Motivated Computer Science undergraduate with hands-on experience in full-stack development using the MERN stack. Skilled in
-building responsive, high-performance web apps and thriving in collaborative, fast-paced environments. Eager to contribute to
-impactful software solutions.</p>
-  </section>
+    <section class="about" id="about">
+        <div class="max-width">
+            <h2 class="title">About Me</h2>
+            <div class="about-content">
+                <div class="column left">
+                    <img src="profile.jpg" alt="Md Afaan Adeeb" width="20" height="20"> 
+                </div>
+                <div class="column right">
+                    <div class="text">I'm Afaan and I'm a <span class="typing-2"></span></div>
+                    <p>I am a final-year B.Tech student at <strong>G. Pullaiah College of Engineering and Technology</strong>, Kurnool, expected to graduate in March 2026. I specialize in bridging the gap between academic theory and practical software development.<br><br>
+                    I have interned at <strong>HackerRank</strong> and <strong>EduSkills Foundations</strong>, where I optimized code performance by 20-30% and built secure authentication modules. I am passionate about leveraging Cloud Architecture (AWS) and LLMs to solve complex problems.</p>
+                    <a href="resume.pdf" class="btn" download>Download Resume</a>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  
-  <img src="myself.jpg" alt="myself"
-  width="200px"  class="profile-pic" />
+    <section class="skills" id="skills">
+        <div class="max-width">
+            <h2 class="title">My Skills</h2>
+            <div class="skills-content">
+                <div class="column left">
+                    <div class="text">Technical Proficiency</div>
+                    <p>My technical toolkit spans full-stack development and AI/ML engineering. I have hands-on experience with cloud platforms like AWS and Generative AI with LLM's.</p>
+                    <a href="#projects">See Projects</a>
+                </div>
+                <div class="column right">
+                    <div class="bars">
+                        <div class="info"><span>Java & DSA</span><span>70%</span></div>
+                        <div class="line java"></div>
+                    </div>
+                    <div class="bars">
+                        <div class="info"><span>Python & Generative AI</span><span>75%</span></div>
+                        <div class="line python"></div>
+                    </div>
+                    <div class="bars">
+                        <div class="info"><span>AWS (Cloud Arch)</span><span>75%</span></div>
+                        <div class="line aws"></div>
+                    </div>
+                    <div class="bars">
+                        <div class="info"><span>Web Dev (HTML5, CSS3, JavaScript, MongoDB, React.js, Express.js, Node.js)</span><span>80%</span></div>
+                        <div class="line web"></div>
+                    </div>
+                    <div class="bars">
+                        <div class="info"><span>SQL & MySQL</span><span>80%</span></div>
+                        <div class="line sql"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <section class="projects" id="projects">
+        <div class="max-width">
+            <h2 class="title">My Projects</h2>
+            <div class="carousel">
+                
+                <div class="card" onclick="window.open('https://github.com/mdafaanadeeb/student-management-system', '_blank')">
+                    <div class="box">
+                        <i class="fas fa-user-graduate"></i>
+                        <div class="text">Student Management System</div>
+                        <p>Python-based system using advanced DSA. Reduced data retrieval time by 30% via efficient search algorithms.</p>
+                    </div>
+                </div>
 
-  <section class="skills" id="skills">
-    <h3>Technical Skills</h3>
-    <ul>
-      <li>HTML, CSS, JavaScript, React.js, TailwindCSS</li>
-      <li>Express.js, Node.js, MongoDB, MySQL</li>
-      <li>Git & GitHub</li>
-      <li>Generative AI and LLM's</li>
-      <li>Python, Java, C++</li>
-    </ul>
-  </section>
+                <div class="card" onclick="window.open('https://github.com/mdafaanadeeb/Java-Calculator', '_blank')">
+                    <div class="box">
+                        <i class="fas fa-calculator"></i>
+                        <div class="text">Java App Suite</div>
+                        <p>A suite of 3 utility tools (BMI, To-Do, EMI) built with Java Swing, featuring modular architecture and clean code.</p>
+                    </div>
+                </div>
 
-  <section class="certifications" id="certifications">
-    <h3>Certifications</h3>
-    <ul>
-      <li>AWS Technical Certification</li>
-      <li>Google Cloud Foundations</li>
-      <li>Coursera Certificates (AI, Web Dev, Backend)</li>
-      <li>Java Certification-HackerRank</li>
-      <li>Eduskills Advanced Certifications</li>
-    </ul>
-  </section>
-<section class="projects" id="projects">
-  <h3>Featured Projects</h3>
+                <div class="card" onclick="window.open('https://github.com/mdafaanadeeb/Afaan-s-portfolio/', '_blank')">
+                    <div class="box">
+                        <i class="fas fa-laptop-code"></i>
+                        <div class="text">Java Calculator</div>
+                        <p>A clean, simple, and interactive calculator built using Java Swing. Fully functional with basic operations and GUI layout.</p>
+                    </div>
+                </div>
 
-  <a href="https://mdafaanadeeb.github.io/Afaan-s-portfolio/" target="_blank">
-    <div class="card">Portfolio Website using HTML, CSS & JS</div>
-  </a>
+                <div class="card" onclick="window.open('https://github.com/mdafaanadeeb/Snake-game', '_blank')">
+                    <div class="box">
+                        <i class="fas fa-gamepad"></i>
+                        <div class="text">Snake Game</div>
+                        <p>Interactive browser-based arcade game with real-time gameplay mechanics and dynamic score tracking.</p>
+                    </div>
+                </div>
 
-  <a href="https://mdafaanadeeb.github.io/Snake-game/" target="_blank">
-    <div class="card">Snake Game</div>
-  </a>
+            </div>
+        </div>
+    </section>
 
-  <a href="https://github.com/mdafaanadeeb/RPS-BattleArena" target="_blank">
-    <div class="card">RPS-BattleArena</div>
-  </a>
+    <section class="experience" id="experience" style="padding: 100px 0; background: #111;">
+        <div class="max-width">
+            <h2 class="title">Experience</h2>
+            <div class="timeline-box">
+                
+                <div style="background: #222; padding: 20px; border-radius: 6px; border-left: 3px solid #00cec9;">
+                    <h3 style="font-size: 20px; color: #00cec9;">Software Engineer Intern</h3>
+                    <span style="font-size: 15px; color: #ccc;">HackerRank | June 2025 - Sep 2025</span>
+                    <p style="margin-top: 10px; color: #eee;">Solved real-world coding challenges. Enhanced coding proficiency by 20% and optimized Java/Python code for performance.</p>
+                </div>
+                \  
+                <div style="background: #222; padding: 20px; border-radius: 6px; border-left: 3px solid #00cec9;">
+                    <h3 style="font-size: 20px; color: #00cec9;">Web development Intern</h3>
+                    <span style="font-size: 15px; color: #ccc;">Rooman Technologies | Mar 2025 - Jun 2025</span>
+                    <p style="margin-top: 10px; color: #eee;">Bulit a hands-on Web development Portfolio,Exciting Web Apps and enlighting for performance.</p>
+                </div>
+                
+                                \  
+                <div style="background: #222; padding: 20px; border-radius: 6px; border-left: 3px solid #00cec9;">
+                    <h3 style="font-size: 20px; color: #00cec9;">Python Web development Intern</h3>
+                    <span style="font-size: 15px; color: #ccc;">Eduskills Foundations | Sep 2025 - Nov 2025</span>
+                    <p style="margin-top: 10px; color: #eee;">Bulit a hands-on Web development Portfolio,Exciting Web Apps and enlighting for performance.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  
-  <a href="https://github.com/mdafaanadeeb/Java-Calculator" target="_blank">
-    <div class="card">Java Calculator</div>
-  </a>
-
-  <a href="https://github.com/mdafaanadeeb/MyJavaProjects" target="_blank">
-    <div class="card">
-      JAVAPROJECTS(1.Username Generator 2.BMI Calculator 3.EMI Calculator 4.Multiplication Table Generator 5.To-Do list)
+    <section class="contact" id="contact">
+        <div class="max-width">
+            <h2 class="title">Contact Me</h2>
+            <div class="contact-content">
+                <div class="column left">
+                    <div class="text">Get in Touch</div>
+                    <p>I am available for full-time opportunities in AI/ML and Software Engineering.</p>
+                    <div class="icons">
+                        <div class="row">
+                            <i class="fas fa-user"></i>
+                            <div class="info">
+                                <div class="head">Name</div>
+                                <div class="sub-title">Md Afaan Adeeb</div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div class="info">
+                                <div class="head">Address</div>
+                                <div class="sub-title">Kurnool, Andhra Pradesh</div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <i class="fas fa-envelope"></i>
+                            <div class="info">
+                                <div class="head">Email</div>
+                                <div class="sub-title">afaanadeeb13@gmail.com</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="column right">
+                    <div class="text">Message Me</div>
+                   <form id="contact-form" action="https://formspree.io/f/xpwvgqwq" method="POST">
+    <div class="fields">
+        <div class="field name">
+            <input type="text" name="name" placeholder="Name" required>
+        </div>
+        <div class="field email">
+            <input type="email" name="email" placeholder="Email" required>
+        </div>
     </div>
-  </a>
-</section>
+    <div class="field">
+        <input type="text" name="subject" placeholder="Subject" required>
+    </div>
+    <div class="field textarea">
+        <textarea cols="30" rows="10" name="message" placeholder="Message.." required></textarea>
+    </div>
+    <div class="button-area">
+        <button type="submit">Send Message</button>
+    </div>
+    <div id="status" style="margin-top:10px; color:#00cec9; display:none;"></div>
+</form>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <section class="Experience" id="Experience">
-    <h3>Experiences</h3>
-    <div class="card">Software Engineer Intern @ HackerRank</div>
-    <div class="card">Python Full Stack Developement Intern @ Eduskills Foundations</div>
-  </section>
+    <footer>
+        <span>Created by <a href="#">Md Afaan Adeeb</a> | <span class="far fa-copyright"></span> 2025 All rights reserved.</span>
+    </footer>
 
-
-
-  
-  <section class="contact" id="contact">
-    <h3>Contact Me</h3>
-    <form>
-      <input type="text" placeholder="Your Name" required />
-      <input type="email" placeholder="Your Email" required />
-      <textarea placeholder="Your Message" rows="4" required></textarea><br>
-      <button type="submit">Send</button>
-    </form>
-  </section>
-
-  <footer>
-    &copy; 2025 Afaan | Full Stack Dev Portfolio
-  </footer>
-
-  <script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
