@@ -1,5 +1,3 @@
-// 1. Typing Animation
-// I updated these roles based on your resume
 const texts = ["AI/ML Engineer", "Java Developer", "Python Expert", "Cloud Enthusiast"];
 let count = 0;
 let index = 0;
@@ -13,7 +11,7 @@ let letter = "";
     currentText = texts[count];
     letter = currentText.slice(0, ++index);
 
-    // Apply to both typing spans
+
     document.querySelectorAll(".typing, .typing-2").forEach(el => el.textContent = letter);
 
     if (letter.length === currentText.length) {
@@ -25,9 +23,6 @@ let letter = "";
     }
 }());
 
-
-// 2. Particle Background Effect
-// This creates the floating dots effect from the portfolio you liked
 const canvas = document.getElementById("particles");
 const ctx = canvas.getContext("2d");
 
@@ -43,7 +38,7 @@ class Particle {
         this.size = Math.random() * 3 + 1;
         this.speedX = Math.random() * 1 - 0.5;
         this.speedY = Math.random() * 1 - 0.5;
-        this.color = '#00cec9'; // Neon Cyan
+        this.color = '#00cec9'; 
     }
     update() {
         this.x += this.speedX;
@@ -88,22 +83,22 @@ window.addEventListener('resize', () => {
 init();
 animateParticles();
 
-// 3. Navbar Sticky Effect
+
 window.addEventListener("scroll", function(){
     const header = document.querySelector(".navbar");
     header.classList.toggle("sticky", window.scrollY > 20);
 });
 
-// 4. Menu Button Toggle
+
 document.querySelector('.menu-btn').addEventListener('click', function() {
     document.querySelector('.navbar .menu').classList.toggle("active");
     document.querySelector('.menu-btn i').classList.toggle("active");
 });
-// 5. Contact Form Handling (AJAX)
+
 const form = document.getElementById("contact-form");
 
 async function handleSubmit(event) {
-    event.preventDefault(); // Stop the page from reloading
+    event.preventDefault();
     const status = document.getElementById("status");
     const data = new FormData(event.target);
     
@@ -117,7 +112,7 @@ async function handleSubmit(event) {
         if (response.ok) {
             status.innerHTML = "Thanks for your submission!";
             status.style.display = "block";
-            form.reset(); // Clear the form inputs
+            form.reset();
         } else {
             response.json().then(data => {
                 if (Object.hasOwn(data, 'errors')) {
@@ -137,3 +132,22 @@ async function handleSubmit(event) {
 }
 
 form.addEventListener("submit", handleSubmit);
+const scrollBtn = document.querySelector(".scroll-up-btn");
+
+window.addEventListener("scroll", () => {
+    // Show button after scrolling down 500px
+    if (window.scrollY > 500) {
+        scrollBtn.classList.add("show");
+    } else {
+        scrollBtn.classList.remove("show");
+    }
+});
+
+scrollBtn.addEventListener("click", () => {
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    });
+});
+
+
