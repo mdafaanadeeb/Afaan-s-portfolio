@@ -19,7 +19,7 @@ body {
     overflow-x: hidden;
 }
 
-/* Particle Canvas */
+
 #particles {
     position: fixed;
     top: 0;
@@ -30,7 +30,51 @@ body {
     background: #111;
 }
 
-/* Navbar */
+
+.scroll-up-btn {
+    position: fixed;
+    height: 45px;
+    width: 42px;
+    background: #00cec9;
+    right: 30px;
+    bottom: 10px;
+    text-align: center;
+    line-height: 45px;
+    color: #111;
+    z-index: 9999;
+    font-size: 30px;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+
+.scroll-up-btn.show {
+    bottom: 30px;
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.scroll-up-btn:hover {
+    filter: brightness(1.2);
+}
+
+
+@media (max-width: 768px) {
+    .about .column.left img {
+        width: 250px;
+        height: 250px;
+        margin-bottom: 20px;
+    }
+    
+    .home .text-2 {
+        font-size: 45px;
+    }
+}
+
+
 .navbar {
     position: fixed;
     width: 100%;
@@ -76,7 +120,7 @@ body {
     color: #00cec9;
 }
 
-/* Home Section */
+
 .home {
     display: flex;
     height: 100vh;
@@ -133,7 +177,6 @@ body {
     background: transparent;
 }
 
-/* Global Section Styles */
 section {
     padding: 100px 0;
 }
@@ -177,7 +220,7 @@ section {
     transform: translateX(-50%);
 }
 
-/* About Section */
+
 .about .about-content,
 .skills .skills-content,
 .contact .contact-content {
@@ -209,7 +252,7 @@ section {
     color: #00cec9;
 }
 
-/* Skills Section */
+
 .skills .column {
     width: 45%;
 }
@@ -247,14 +290,14 @@ section {
     background: #00cec9;
 }
 
-/* Specific Skill Widths */
+
 .skills .bars .line.java::before { width: 90%; }
 .skills .bars .line.python::before { width: 85%; }
 .skills .bars .line.aws::before { width: 75%; }
 .skills .bars .line.web::before { width: 80%; }
 .skills .bars .line.sql::before { width: 70%; }
 
-/* Projects Section */
+
 .projects .carousel {
     display: flex;
     flex-wrap: wrap;
@@ -303,7 +346,7 @@ section {
     font-size: 15px;
 }
 
-/* Contact Section */
+
 .contact .column {
     width: calc(50% - 30px);
 }
@@ -329,7 +372,7 @@ section {
     color: #00cec9;
 }
 
-/* Form */
+
 .contact .right form .fields {
     display: flex;
 }
@@ -381,7 +424,6 @@ section {
     background: none;
 }
 
-/* Footer */
 footer {
     background: #111;
     padding: 15px 23px;
@@ -393,3 +435,4 @@ footer span a {
     color: #00cec9;
     text-decoration: none;
 }
+
