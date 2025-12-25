@@ -61,13 +61,22 @@ body {
     filter: brightness(1.2);
 }
 
-
 @media (max-width: 768px) {
-    .about .column.left img {
-        width: 250px;
-        height: 250px;
-        margin-bottom: 20px;
+    .about-content, .skills-content, .contact-content {
+        flex-direction: column !important;
+        text-align: center;
     }
+
+    .column {
+        width: 100% !important; 
+        margin-bottom: 30px;
+    }
+
+    .navbar .menu {
+     
+        left: -100%; 
+    }
+}
     
     .home .text-2 {
         font-size: 45px;
@@ -435,4 +444,5 @@ footer span a {
     color: #00cec9;
     text-decoration: none;
 }
+
 
